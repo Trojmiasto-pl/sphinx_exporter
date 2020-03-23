@@ -10,7 +10,6 @@ require (
 	github.com/prometheus/client_golang v1.0.0
 	github.com/prometheus/common v0.6.0
 	github.com/sirupsen/logrus v1.4.2 // indirect
-	github.com/stretchr/objx v0.2.0 // indirect
 	golang.org/x/sys v0.0.0-20190712062909-fae7ac547cb7 // indirect
 	google.golang.org/appengine v1.6.1 // indirect
 	gopkg.in/alecthomas/kingpin.v2 v2.2.6
