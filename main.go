@@ -596,11 +596,13 @@ func (e *Exporter) Collect(ch chan<- prometheus.Metric) {
 
 	for threads_rows.Next() {
 		var tid string
+		var name string
 		var proto string
 		var state string
+		var host string
 		var time string
 		var info string
-		err := threads_rows.Scan(&tid, &proto, &state, &time, &info)
+		err := threads_rows.Scan(&tid, &name, &proto, &state, &host, &time, &info)
 		if err != nil {
 			log.Error(err)
 			return
